@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title -->
+    <title>Q&A</title>
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+    <main>
+        <div class="header">
+            <h1>javascript questions</h1>
+        </div>
+        <div class="section-center">
+            <div class="questions_container">
+                <div class="question">
+                    <h3>What is an event loop?</h3>
+                    <button type="button" class="question-btn">
+                        <span class="plus-icon"><i class="far fa-plus-square"></i></span>
+                        <span class="minus-icon"><i class="far fa-minus-square"></i></span>
+                    </button>
+                </div>
+                <div class="answer">
+                    <p>
+                        The Event Loop is a queue of callback functions. When an async function executes, the callback function is pushed into the queue. The JavaScript engine doesn't start processing the event loop until the async function has finished executing the code. Note: It allows Node.js to perform non-blocking I/O operations even though JavaScript is single-threaded. 
+                    </p>
+                </div>
+            </div>
+            <div class="questions_container">
+                <div class="question">
+                    <h3>What is the difference between == and === operators?</h3>
+                    <button type="button" class="question-btn">
+                        <span class="plus-icon"><i class="far fa-plus-square"></i></span>
+                        <span class="minus-icon"><i class="far fa-minus-square"></i></span>
+                    </button>
+                </div>
+                <div class="answer">
+                    <p>
+                        JavaScript provides both strict(===, !==) and type-converting(==, !=) equality comparison. The strict operators take type of variable in consideration, while non-strict operators make type correction/conversion based upon values of variables.
+                    </p>
+                </div>
+            </div>
+
+            <div class="questions_container">
+                <div class="question">
+                    <h3>What are lambda or arrow functions?</h3>
+                    <button type="button" class="question-btn">
+                        <span class="plus-icon"><i class="far fa-plus-square"></i></span>
+                        <span class="minus-icon"><i class="far fa-minus-square"></i></span>
+                    </button>
+                </div>
+                <div class="answer">
+                    <p>
+                        An arrow function is a shorter syntax for a function expression and does not have its own this, arguments, super, or new.target. These functions are best suited for non-method functions, and they cannot be used as constructors. 
+                    </p>
+                </div>
+            </div>
+
+            <div class="questions_container">
+                <div class="question">
+                    <h3>What is a first class function</h3>
+                    <button type="button" class="question-btn">
+                        <span class="plus-icon"><i class="far fa-plus-square"></i></span>
+                        <span class="minus-icon"><i class="far fa-minus-square"></i></span>
+                    </button>
+                </div>
+                <div class="answer">
+                    <p>In Javascript, functions are first class objects. First-class functions means when functions in that language are treated like any other variable.
+
+                        For example, in such a language, a function can be passed as an argument to other functions, can be returned by another function and can be assigned as a value to a variable. For example, in the below example, handler functions assigned to a listener
+                        </p>
+                </div>
+            </div>
+        </div>
+     
+
+        
+
+    </main>
+    
+    <!-- javascript -->
+    <script src="app.js"></script>
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/a98a2ac7b5.js" crossorigin="anonymous"></script>
+</body>
+</html>
